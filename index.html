@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2-MODULE-TEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Blogging Website</span>
+        <button id="create-blog-btn">Create New Post</button>
+      </header>
+  
+      <div id="blog-container"></div>
+  
+      <div id="blog-container"></div>
+  
+      <div id="create-blog-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="create-blog-form">
+            <label for="title">Create A Post</label>
+            <input
+              placeholder="Enter your Heading"
+              type="text"
+              id="title"
+              name="title"
+            />
+            <textarea
+              placeholder="Enter your Blog Post"
+              id="description"
+              name="description"
+            ></textarea>
+            <button type="submit">Publish Post</button>
+            <div class="cancel-post">Cancel Post</div>
+          </form>
+        </div>
+      </div>
+  
+      <div id="edit-blog-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="edit-blog-form">
+            <label for="edit-title">Edit A Post</label>
+            <input type="text" id="edit-title" name="edit-title" />
+  
+            <textarea id="edit-description" name="edit-description"></textarea>
+            <button type="submit">Save Post</button>
+            <div class="delete-post">Delete Post</div>
+          </form>
+        </div>
+      </div>
+  
+      <script src="script.js"></script>
+</body>
+</html>
+

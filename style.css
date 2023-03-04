@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #000;
+    color: white;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 9vh;
+    padding: 10px 5px;
+  }
+  header span {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  header button {
+    position: absolute;
+    right: 20px;
+    width: 180px;
+    height: 35px;
+    background-color: #2c2b2b;
+    color: white;
+    border: 1px solid white;
+
+  }
+  
+  #blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin: 10px;
+    max-width: 300px;
+    padding: 10px;
+  }
+  
+  .blog-card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .blog-card p {
+    font-size: 1rem;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #e6e4e4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  #title{
+    background-color:#e6e4e4 ;
+  }
+  #description{
+    background-color:#e6e4e4 ;
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .blog-post {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(199, 199, 199);
+  }
+  .blog-post .timeStamp {
+    display: inline-block;
+    float: right;
+    opacity: 0.7;
+  }
+  .blog-post h2 {
+    margin-left: 20px;
+  }
+  .blog-post p {
+    margin-top: 20px;
+    display: block;
+    margin-left: 20px;
+  }
+  .blog-post button {
+    width: 10vw;
+    height: 5vh;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+  #create-blog-form label {
+    display: block;
+    color: black;
+  }
+  #create-blog-form input {
+    width: 100%;
+    margin-top: 17px;
+    height: 7vh;
+    padding: 10px;
+  }
+  #create-blog-form textarea {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    margin-top: 21px;
+  }
+  #create-blog-form button {
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .cancel-post {
+    display: inline-block;
+    color: black;
+    width: 150px;
+    height: 35px;
+    border: 1px solid rgb(80, 79, 79);
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .cancel-post:hover {
+    cursor: pointer;
+  }
+  #edit-blog-form label {
+    display: block;
+    color: black;
+  }
+  #edit-blog-form input {
+    width: 100%;
+    margin-top: 17px;
+    height: 6vh;
+    padding: 10px;
+    background-color:#e6e4e4 ;
+  }
+  #edit-blog-form textarea {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    margin-top: 21px;
+    background-color:#e6e4e4 ;
+  }
+  #edit-blog-form button {
+    width: 150px;
+    height: 35px;
+  }
+  .delete-post {
+    display: inline-block;
+    color: black;
+    width: 150px;
+    height: 35px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid black;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .delete-post:hover {
+    cursor: pointer;
+  }
